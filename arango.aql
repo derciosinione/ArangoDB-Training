@@ -33,4 +33,8 @@ insert {_from: "friends/4897", _to: "friends/4647", handCoverge: 5 } into hifive
 
 for friend in friends
     return {friend,}
-    
+
+// search values from the views
+for result in friendsview
+    search phrase(result.name, ["dercio"], "text_en")
+    return result
