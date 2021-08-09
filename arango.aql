@@ -1,13 +1,22 @@
-insert {"name": "will"} into friends
+/* We have two types of collections:
+- Document
+- Edge - used to connect one document to another document
+*/
 
+insert {"name": "crisvan"} into friends
 
-return document("friends/4647") // its used to get data in the collection friend with id 4647
+return document(["friends/4647", "friends/4527", "friends/4647"])
 
-return document(["friends/4647", "friends/4527", "friends/4893"]) // get multiple objects
-
-// get friend with name equal dercio
 for friend in friends
     filter friend.name == 'dercio'
     return friend
 
+// select all friends
+for friend in friends
+  return {friend, foo: "derone"}
+
+insert {_key: "1", login: 1} into sessions
+
 return document("sessions/1")
+
+insert {_from: "friends/4647", _to: "friends/4527", handCoverge: 0.3 } into hifives
