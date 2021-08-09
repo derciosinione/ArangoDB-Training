@@ -46,3 +46,5 @@ for result in friendsview
 
 
 insert {name: "indira", age: "24", email: "indira@gmail.com"} into friends
+insert {name: "reginaldo", email: "reginaldo@gmail.com", crimes: 4} into friends
+insert {name: "sara", email: "sara@gmail.com"} into friends
