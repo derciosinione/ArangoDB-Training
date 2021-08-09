@@ -43,3 +43,6 @@ for result in friendsview
 for result in friendsview
     search phrase(result.name, ["dercio"], "text_en") or phrase(result.name, ["wilson"], "text_en") 
     return result
+
+
+insert {name: "indira", age: "24", email: "indira@gmail.com"} into friends
