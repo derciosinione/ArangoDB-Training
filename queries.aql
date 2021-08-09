@@ -38,3 +38,8 @@ for friend in friends
 for result in friendsview
     search phrase(result.name, ["dercio"], "text_en")
     return result
+
+// search values from views with or operator
+for result in friendsview
+    search phrase(result.name, ["dercio"], "text_en") or phrase(result.name, ["wilson"], "text_en") 
+    return result
