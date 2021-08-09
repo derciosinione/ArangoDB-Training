@@ -4,6 +4,8 @@
 */
 
 insert {"name": "crisvan"} into friends
+insert {_key: "4", name: "wilson"} into friends
+
 
 return document(["friends/4647", "friends/4527", "friends/4647"])
 
@@ -21,6 +23,8 @@ return document("sessions/1")
 
 
 insert {_from: "friends/4527", _to: "friends/4647", handCoverge: 0.3 } into hifives
+insert {_from: "friends/4527", _to: "friends/4841", handCoverge: 0.3 } into hifives
+insert {_from: "friends/4527", _to: "friends/4875", handCoverge: 0.3 } into hifives
 insert {_from: "friends/4841", _to: "friends/4861", handCoverge: 0.34 } into hifives
 insert {_from: "friends/4875", _to: "friends/4893", handCoverge: 0.2 } into hifives
 insert {_from: "friends/4647", _to: "friends/4527", handCoverge: 10 } into hifives
