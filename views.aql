@@ -1,0 +1,33 @@
+{
+  "writebufferIdle": 64,
+  "type": "arangosearch",
+  "writebufferSizeMax": 33554432,
+  "consolidationPolicy": {
+    "type": "tier",
+    "segmentsBytesFloor": 2097152,
+    "segmentsBytesMax": 5368709120,
+    "segmentsMax": 10,
+    "segmentsMin": 1,
+    "minScore": 0
+  },
+  "primarySort": [],
+  "globallyUniqueId": "h86267A58BE6E/12090",
+  "id": "12090",
+  "storedValues": [],
+  "writebufferActive": 0,
+  "consolidationIntervalMsec": 1000,
+  "cleanupIntervalStep": 2,
+  "commitIntervalMsec": 1000,
+  "links": {
+    "friends": {
+      "analyzers": [
+        "text_en"
+      ],
+      "fields": {},
+      "includeAllFields": true,
+      "storeValues": "none",
+      "trackListPositions": false
+    }
+  },
+  "primarySortCompression": "lz4"
+}
