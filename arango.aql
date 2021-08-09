@@ -19,4 +19,14 @@ insert {_key: "1", login: 1} into sessions
 
 return document("sessions/1")
 
-insert {_from: "friends/4647", _to: "friends/4527", handCoverge: 0.3 } into hifives
+
+insert {_from: "friends/4527", _to: "friends/4647", handCoverge: 0.3 } into hifives
+insert {_from: "friends/4841", _to: "friends/4861", handCoverge: 0.34 } into hifives
+insert {_from: "friends/4875", _to: "friends/4893", handCoverge: 0.2 } into hifives
+insert {_from: "friends/4647", _to: "friends/4527", handCoverge: 10 } into hifives
+insert {_from: "friends/4897", _to: "friends/4647", handCoverge: 5 } into hifives
+
+
+for friend in friends
+    return {friend,}
+    
