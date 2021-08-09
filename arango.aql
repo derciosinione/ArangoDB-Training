@@ -1,0 +1,13 @@
+insert {"name": "will"} into friends
+
+
+return document("friends/4647") // its used to get data in the collection friend with id 4647
+
+return document(["friends/4647", "friends/4527", "friends/4893"]) // get multiple objects
+
+// get friend with name equal dercio
+for friend in friends
+    filter friend.name == 'dercio'
+    return friend
+
+return document("sessions/1")
